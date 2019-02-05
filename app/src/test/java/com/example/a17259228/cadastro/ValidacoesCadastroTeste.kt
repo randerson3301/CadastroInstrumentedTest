@@ -1,5 +1,8 @@
 package com.example.a17259228.cadastro
 
+import com.example.a17259228.cadastro.ui.isSeqNum
+import com.example.a17259228.cadastro.ui.validarEmail
+import com.example.a17259228.cadastro.ui.validar_min_chars
 import org.junit.Assert
 import org.junit.Test
 

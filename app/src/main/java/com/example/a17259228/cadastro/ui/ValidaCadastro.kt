@@ -1,4 +1,4 @@
-package com.example.a17259228.cadastro
+package com.example.a17259228.cadastro.ui
 
 //criando uma função  pura - recebe o input e o mesmo output sempre
 //: Boolean -> tipo do retorno
