@@ -5,69 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity"
-    android:padding="15dp"
     android:orientation="vertical"
-    >
+    android:padding="16dp"
+    android:id="@+id/rootView">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digite seu nome:"
-        android:textSize="25sp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_nome"
-        android:hint="Nome de Usuário"
-        />
-    <!--email-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Digite seu email:"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_email"
-        android:hint="E-mail"
-        />
+        android:text="Cadastro" />
 
-    <!--senha-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Digite sua senha:"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp"
 
-        />
     <EditText
+        android:id="@+id/etUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_senha"
+        android:hint="Nome de usuário" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Senha"
-
-        />
+        android:hint="Senha"/>
 
     <Button
-        android:layout_width="140dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        android:text="Salvar"
-        android:id="@+id/btn_cadastro"
-        />
+        android:id="@+id/btSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
 
     <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
         android:layout_gravity="center"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        />
+
 
 </LinearLayout>
